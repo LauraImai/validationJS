@@ -23,7 +23,7 @@ html {
 
 body {
     background-color: #ffb777;
-    height: 100vh; /* 100% do valor da tela */
+    height: 100vh; 
     display: flex;
     justify-content: center;
     align-items: center;
@@ -32,7 +32,7 @@ body {
 .Calculadora {
     box-shadow: 0 0 25px 0 rgb(0,0,0,0.3);
     border-radius: 2em;
-    overflow: hidden; /* o conteudo do visor nao vai "vazar" */
+    overflow: hidden; 
     background-color: var(--cor-fundo);
 }
 
@@ -65,12 +65,11 @@ button {
     font-size: 2rem;
     cursor: pointer;
 }
-/* Para fazer a parte de deixar os botoes bonitinhos é preciso fazer um grid-layout, que vai meio que transformar nossas paradinhas aqui em uma matriz e dentro dela a gente vai colocar as coisas certinho */
+
 .teclas {
     padding: 3rem;
     display: grid;/*linhas e colunas que vamos usar*/
     gap: 1.5rem; /* separacao entre os elementos */
     grid-template-columns: repeat(4, 6rem);
     grid-template-rows: repeat(5, 6rem);
-    /*mexer com o grid-area*/
 }
