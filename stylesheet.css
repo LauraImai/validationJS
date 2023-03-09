@@ -31,7 +31,7 @@ body {
 
 .Calculadora {
     box-shadow: 0 0 25px 0 rgb(0,0,0,0.3);
-    border-radius: 2em;
+    border-radius: 1em;
     overflow: hidden; 
     background-color: var(--cor-fundo);
 }
@@ -46,24 +46,34 @@ body {
     border-radius: 0 0 2rem 2rem;
 }
 
-.math {
+[data-tecla = "somar"], [data-tecla = "subtrair"], [data-tecla = "multiplicar"], [data-tecla = "dividir"]{
     background-color: var(--cor-botao-math);
     color: white;
 }
 
-.number {
+[data-tipo-tecla = "num"] {
     background-color: var(--cor-botao-num);
 }
 
-.op {
+[data-tipo-tecla = "salvar"], [data-tipo-tecla = "limpar"], [data-tipo-tecla = "recuperar"] {
     background-color: var(--cor-botao-op);
     color: white;
 }
 
+
 button {
-    border-radius: 50%;
+    border-radius: 20%;
     font-size: 2rem;
     cursor: pointer;
+}
+
+#equal {
+    background-color: var(--cor-botao-math);
+    border-radius: 10%;
+    font-size: 2.5rem;
+    padding: 0 6.75rem;
+    cursor: pointer;
+    color: white;
 }
 
 .teclas {

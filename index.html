@@ -10,7 +10,7 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@700&family=Roboto&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="./stylesheet.css">
-        <link rel="stylesheet" href="./script.js">
+        <script src="./script.js" defer></script>
     </head>
     <body>
         <header>
@@ -20,26 +20,26 @@
             <div class="Calculadora">
                 <div class="display">0</div>
                 <div class="teclas">
-                    <button class="op">MS</button>
-                    <button class="op">MR</button>
-                    <button class="op">AC</button>
-                    <button class="op">=</button>
-                    <button class="number">9</button>
-                    <button class="number">8</button>
-                    <button class="number">7</button>
-                    <button class="math">+</button>
-                    <button class="number">6</button>
-                    <button class="number">5</button>
-                    <button class="number">4</button>
-                    <button class="math">-</button>
-                    <button class="number">3</button>
-                    <button class="number">2</button>
-                    <button class="number">1</button>
-                    <button class="math">&times;</button>
-                    <button class="number">0</button>
-                    <button class="number">.</button>
-                    <button class="number">00</button>
-                    <button class="math">÷</button>
+                    <button data-tipo-tecla="salvar" class="op">MS</button>
+                    <button data-tipo-tecla="recuperar" class="op">MR</button>
+                    <button data-tipo-tecla="limpar" class="">AC</button>
+                    <button data-tipo-tecla="operador" data-tecla="somar">+</button>
+                    <button data-tipo-tecla="num" class="nove">9</button>
+                    <button data-tipo-tecla="num" class="oito">8</button>
+                    <button data-tipo-tecla="num" class="sete">7</button>
+                    <button data-tipo-tecla="operador" data-tecla="subtrair">-</button>
+                    <button data-tipo-tecla="num" class="seis">6</button>
+                    <button data-tipo-tecla="num" class="cinco">5</button>
+                    <button data-tipo-tecla="num" class="quatro">4</button>
+                    <button data-tipo-tecla="operador" data-tecla="multiplicar">&times;</button>
+                    <button data-tipo-tecla="num" class="tres">3</button>
+                    <button data-tipo-tecla="num" class="dois">2</button>
+                    <button data-tipo-tecla="num" class="um">1</button>
+                    <button data-tipo-tecla="operador" data-tecla="dividir">÷</button>
+                    <button data-tipo-tecla="num" class="zero">0</button>
+                    <button data-tipo-tecla="num" class="decimal">.</button>
+                    <!--<button class="number">00</button>-->
+                    <button data-tipo-tecla="igual" class="op equal" id="equal">=</button>
                 </div>
             </div>
         </main>
